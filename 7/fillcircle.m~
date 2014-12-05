@@ -1,0 +1,4 @@
+function fillcircle(x, y, r, col, n)
+if nargin == 4
+    n = 100;
+end
