@@ -1,3 +1,0 @@
-list_depth(l):
-	if type(l) != list:
-	
