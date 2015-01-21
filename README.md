@@ -19,3 +19,7 @@ Kod från övningar i DD1345
 
 Övning 8: Klasser
 
+Övning 9: Länkade listor
+
+Övning 10: Binära sökträd
+
