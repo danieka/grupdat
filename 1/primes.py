@@ -1,20 +1,25 @@
 # coding=utf-8
-
-from math import sqrt
-
+# The coding above is only necessary with Python 2
 
 possible_prime = 2
-i = 2
 
 while True:
-	is_prime = True
-	i = 2
-	while i <= sqrt(possible_prime):
-		if possible_prime % i == 0:
+	#This first loop loops over possible primes
+	divisor = 2
+	is_prime = True #For keeping track of whether possible_prime actually is a prime
+	while divisor < possible_prime:
+		#This second loop loops over possible divisors
+		if possible_prime % divisor == 0:
+			# Possible prime is not a prime and we keep track of that with is_prime and break the loop
 			is_prime = False
-		i += 1
+			break
+		else:
+			#Go to the next divisor
+			divisor = divisor + 1
 
 	if is_prime:
-		print(possible_prime, " is a prime.")
-	
-	possible_prime += 1
+		#If possible prime was a prime we should print it
+		print(possible_prime)
+
+	#Go to the next possible prime
+	possible_prime = possible_prime + 1
